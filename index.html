@@ -168,19 +168,19 @@
 <!-- End paper abstract -->
 
 <!-- Method Overview -->
-<section class="hero is-small is-light">
+<section class="hero is-small">
   <div class="hero-body">
-    <div class="container is-max-desktop has-text-centered">
-      <h2 class="title is-3">Method Overview</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item">
-          <!-- Your image here -->
-          <img src="static/images/method.png" alt="MY ALT TEXT"/>
-          <div class="content has-text-justified">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="content">
+          <h2 class="title is-3">Method Overview</h2>
+          <center><img src="static/images/method.png" alt="NaVid" class="center-image blend-img-background"></center>
+          <div class="level-set has-text-justified">
             <p class="has-text-justified">
               <b>The overview of NaVid.</b> The inputs of NaVid consist of the RGB frames from the online video observation {x0, · · · , xt} along with the human instruction I. For each frame, we use an observation encoder to extract the visual information with the instruction to obtain observation tokens, including, instruction-queried tokens (orange blocks) and instruction-agnostic tokens (blue blocks). At the current step t, the history frames and current frame xt are encoded as observation tokens, with 4 and 64 instruction-agnostic tokens for history frames and current frames, respectively. Besides, our method obtains language tokens by a text encoder. Finally, split by the special tokens [HIS], [OBS], and [NAV], we concatenate the observation tokens and language tokens and send the tokens to the Vicuna-7B then obtain the next-step action.
             </p>
-        </div>
+          </div>
       </div>
     </div>
   </div>
@@ -188,9 +188,9 @@
 <!-- End image carousel  -->
 
 <!-- Image carousel 1 -->
-<section class="hero is-small is-light">
+<section class="hero is-small">
   <div class="hero-body">
-    <div class="container is-max-desktop has-text-centered">
+    <div class="container has-text-centered">
       <!-- <div class="columns is-centered has-text-centered"> -->
         <!-- <div class="column is-four-fifths"> -->
           <!-- <h2 class="title is-3">Caption Results Visualization</h2> -->
