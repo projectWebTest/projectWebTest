@@ -167,8 +167,27 @@
 </section>
 <!-- End paper abstract -->
 
+<!-- Image carousel  -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <h2 class="title is-3">Method Overview</h2>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/method.png" alt="MY ALT TEXT"/>
+          <div class="content has-text-justified">
+            <p>
+              The overview of NaVid. The inputs of NaVid consist of the RGB frames from the online video observation {x0, · · · , xt} along with the human instruction I. For each frame, we use an observation encoder to extract the visual information with the instruction to obtain observation tokens, including, instruction-queried tokens (orange blocks) and instruction-agnostic tokens (blue blocks). At the current step t, the history frames and current frame xt are encoded as observation tokens, with 4 and 64 instruction-agnostic tokens for history frames and current frames, respectively. Besides, our method obtains language tokens by a text encoder. Finally, split by the special tokens [HIS], [OBS], and [NAV], we concatenate the observation tokens and language tokens and send the tokens to the Vicuna-7B then obtain the next-step action.
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End image carousel  -->
 
-<!-- Image carousel -->
+<!-- Image carousel 1 -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
@@ -190,7 +209,7 @@
     </div>
   </div>
 </section>
-<!-- End image carousel -->
+<!-- End image carousel 1 -->
 
 <!-- Image carousel 2 -->
 <section class="hero is-small">
