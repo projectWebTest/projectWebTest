@@ -846,8 +846,7 @@ var bulmaCarousel = function (_EventEmitter) {
       this._transitioner.init().apply(true, this._setHeight.bind(this));
 
       if (this.options.autoplay) {
-        // this._autoplay.init().start();
-		this._autoplay.init().stop();
+        this._autoplay.init().start();
       }
     }
 
@@ -1034,7 +1033,7 @@ var onMouseLeave = Symbol('onMouseLeave');
 
 var defaultOptions = {
 	autoplay: false,
-	autoplaySpeed: 90000
+	autoplaySpeed: 3000
 };
 
 var Autoplay = function (_EventEmitter) {
