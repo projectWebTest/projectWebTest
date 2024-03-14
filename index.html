@@ -184,13 +184,15 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <div class="content">
-          <h2 class="title is-3">Method Overview</h2>
-          <center><img src="static/images/method.png" alt="NaVid" class="center-image blend-img-background"></center>
-          <div class="level-set has-text-justified">
-            <p class="has-text-justified">
-              <b>The overview of NaVid.</b> The inputs of NaVid consist of the RGB frames from the online video observation {x0, · · · , xt} along with the human instruction I. For each frame, we use an observation encoder to extract the visual information with the instruction to obtain observation tokens, including, instruction-queried tokens (orange blocks) and instruction-agnostic tokens (blue blocks). At the current step t, the history frames and current frame xt are encoded as observation tokens, with 4 and 64 instruction-agnostic tokens for history frames and current frames, respectively. Besides, our method obtains language tokens by a text encoder. Finally, split by the special tokens [HIS], [OBS], and [NAV], we concatenate the observation tokens and language tokens and send the tokens to the Vicuna-7B then obtain the next-step action.
-            </p>
+            <h2 class="title is-3">Method Overview</h2>
+            <img src="static/images/method.png" alt="NaVid" class="center-image blend-img-background">
+            <div class="level-set has-text-justified">
+              <p class="has-text-justified">
+                <b>The overview of NaVid.</b> The inputs of NaVid consist of the RGB frames from the online video observation {x0, · · · , xt} along with the human instruction I. For each frame, we use an observation encoder to extract the visual information with the instruction to obtain observation tokens, including, instruction-queried tokens (orange blocks) and instruction-agnostic tokens (blue blocks). At the current step t, the history frames and current frame xt are encoded as observation tokens, with 4 and 64 instruction-agnostic tokens for history frames and current frames, respectively. Besides, our method obtains language tokens by a text encoder. Finally, split by the special tokens [HIS], [OBS], and [NAV], we concatenate the observation tokens and language tokens and send the tokens to the Vicuna-7B then obtain the next-step action.
+              </p>
+            </div>
           </div>
+        </div>
       </div>
     </div>
   </div>
@@ -215,27 +217,27 @@
 </section> -->
 <!-- End image carousel 1 -->
 
-<!-- Video carousel 1 R2R -->
+<!-- Video carousel 1 Caption -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container is-max-desktop has-text-centered">
       <h2 class="title is-3">Caption Results Visualization</h2>
-      <div id="results-carousel" class="carousel results-carousel">
+      <div id="results-carousel-Caption" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay playsinline controls muted loop height="100%">
-            <source src="static/videos/real_video_caption/real_1.mp4"
+            <source src="./static/videos/real_video_caption/real_1.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay playsinline controls muted loop height="100%">
-            <source src="static/videos/real_video_caption/real_2.mp4"
+            <source src="./static/videos/real_video_caption/real_2.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
           <video poster="" id="video3" autoplay playsinline controls muted loop height="100%">
-            <source src="static/videos/real_video_caption/real_7.mp4"
+            <source src="./static/videos/real_video_caption/real_7.mp4"
             type="video/mp4">
           </video>
         </div>
@@ -243,7 +245,7 @@
     </div>
   </div>
 </section>
-<!-- End Video carousel 1 R2R -->
+<!-- End Video carousel 1 Caption -->
 
 <!-- Image carousel 2 R2R -->
 <!-- <section class="hero is-small">
@@ -270,23 +272,23 @@
   <div class="hero-body">
     <div class="container is-max-desktop has-text-centered">
       <h2 class="title is-3">R2R Data Visualization</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay playsinline controls muted loop height="100%">
+      <div id="results-carousel-R2R" class="carousel results-carousel">
+        <div class="item item-video4">
+          <video poster="" id="video4" autoplay playsinline controls muted loop height="100%">
             <!-- Your video file here -->
             <source src="static/videos/sim_video_caption/246.mp4"
             type="video/mp4">
           </video>
         </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay playsinline controls muted loop height="100%">
+        <div class="item item-video5">
+          <video poster="" id="video5" autoplay playsinline controls muted loop height="100%">
             <!-- Your video file here -->
             <source src="static/videos/sim_video_caption/312.mp4"
             type="video/mp4">
            </video>
         </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay playsinline controls muted loop height="100%">
+        <div class="item item-video6">
+          <video poster="" id="video6" autoplay playsinline controls muted loop height="100%">
             <!-- Your video file here -->
             <source src="static/videos/sim_video_caption/408.mp4"
             type="video/mp4">
@@ -364,7 +366,7 @@
 </footer>
 
 <!-- Statcounter tracking code -->
-  
+
 <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
     <!-- End of Statcounter Code -->
